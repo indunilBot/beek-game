@@ -1,0 +1,1744 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Beek</title>
+  <link rel="icon" type="image/x-icon" href="./assets/img/logo-icon.svg" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="preconnect" href="../../../fonts.googleapis.com/index.html" />
+  <link rel="preconnect" href="../../../fonts.gstatic.com/index.html" crossorigin />
+  <link
+    href="../../../fonts.googleapis.com/css2bdb1.css?family=Poppins:wght@300;400;500;600;700&amp;family=Rajdhani:wght@300;400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/app.min.css" />
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+</head>
+
+<style>
+
+  .c-border{
+    border: 2px solid #C3073F !important;
+
+
+  }
+  .c-border:hover{
+    border-color: #fff !important;
+  }
+
+  @media (max-width: 1199px) {
+    .c-iframe {
+      height: 1000px !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .robot {
+      display: none;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .mobview img {
+      display: none;
+    }
+  }
+
+  .hero-background-video,
+  .hero-background-mvideo {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
+  /* .tokenomics-background-video {
+  width: auto;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  align-items: center; 
+  justify-content: center;
+  min-width: 50%; 
+  min-height: 50%; 
+  border-radius: 50px;
+  object-fit: cover;
+} */
+
+
+  /* Initially hide the mobile video to only show it in mobile views */
+  .hero-background-mvideo {
+    display: none;
+  }
+
+  /* Media query for mobile devices */
+  @media (max-width: 767px) {
+
+    /* Hide the desktop background video */
+    .hero-background-video {
+      display: none;
+    }
+
+    /* Show the mobile background video */
+    .hero-background-mvideo {
+      display: block;
+    }
+  }
+</style>
+
+<body>
+  <div class="cursor"></div>
+  <div class="preloader"
+    style="width:100vw; height: 100vh; display: flex; justify-items: center; align-items: center; background: black;">
+    <!-- <div class="preloader-inner"><span class="loader"></span></div> -->
+    <div class="preloader-inner">
+      <img src="assets/img/loader.gif" alt="Beek" />
+    </div>
+  </div>
+
+  <div class="th-menu-wrapper">
+    <div class="th-menu-area text-center">
+      <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
+      <div class="mobile-logo">
+        <a href="index.html" class="nav-logo"></span><img src="assets/img/logo.png" alt="Beek" /></a>
+      </div>
+      <div class="th-mobile-menu">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="#about">ABOUT US</a></li>
+          <li><a href="#games">GAME</a></li>
+          <li><a href="#tokenomics">TOKENOMICS</a></li>
+          <li><a href="#teams">TEAMS</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+  <header class="th-header header-layout1">
+    <div class="header-top">
+      <div class="container">
+        <div class="row justify-content-center justify-content-lg-between align-items-center gy-2">
+          <div class="col-auto d-none d-lg-block">
+            <p class="header-notice"></p>
+            <div class="header-links">
+              <ul>
+                <li>
+                  <div class="header-notice">
+                    Welcome to our <a href="index.html">Beek</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="header-links">
+              <ul>
+                <li><a href="#">Dextool</a></li>
+                <li><a href="#">Etherscan</a></li>
+                <li><a href="#">Uniswap</a></li>
+                <li><a href="#">Telegram</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sticky-wrapper">
+      <div class="menu-area">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-auto">
+              <div class="header-logo">
+                <a href="index.html">
+                  <img src="assets/img/logo.png" alt="Beek" /></a>
+              </div>
+            </div>
+            <div class="col-auto">
+              <nav class="main-menu d-none d-lg-inline-block">
+                <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="#about">ABOUT US</a></li>
+                  <li><a href="#games">GAMES</a></li>
+                  <li><a href="#tokenomics">TOKENOMICS</a></li>
+                  <li><a href="#teams">TEAMS</a></li>
+                </ul>
+              </nav>
+              <div class="header-button d-flex d-lg-none">
+                <button type="button" class="th-menu-toggle">
+                  <span class="btn-border"></span><i class="far fa-bars"></i>
+                </button>
+              </div>
+            </div>
+
+
+
+            <div class="col-auto d-none d-xl-block">
+              <div class="header-button">
+                <div class="d-xxl-block d-none">
+                  <a href="#" class="th-btn"> Buy Now</a>
+                  <!-- <i class="fa-brands fa-twitch me-1"></i> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="logo-bg"></div>
+      </div>
+    </div>
+  </header>
+  <div class="th-hero-wrapper hero-1" id="hero">
+    <!-- data-bg-src="assets/img/hero/hero-bg1-1.png" -->
+
+    <!-- <div class="video-bg">
+        <video autoplay loop muted plays-inline class="background-clip">
+          <source src="assets/video/video.mp4" type="video/mp4" />
+        </video>
+      </div> -->
+
+
+    <video autoplay muted loop playsinline class="hero-background-video">
+      <source src="assets/video/video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- <video autoplay muted loop playsinline class="hero-background-mvideo">
+          <source src="assets/video/mvideo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>  -->
+
+
+
+    <div class="container">
+      <div class="hero-style1 text-center">
+        <span class="sub-title custom-anim-top wow animated" data-wow-duration="1.2s" data-wow-delay="0.1s"># World
+          Class Gaming Site</span>
+        <h1 class="hero-title">
+          <span class="title1 custom-anim-top wow animated" data-wow-duration="1.1s" data-wow-delay="0.3s"
+            data-bg-src="assets/img/hero/hero-title-bg-shape1.svg">Welcome to Beek</span>
+          <span class="title2 custom-anim-top wow animated" data-wow-duration="1.1s" data-wow-delay="0.4s">Discover the
+            Beek Gaming Universe</span>
+        </h1>
+
+
+        <div class="btn-color-white">
+          <div class="btn-group custom-anim-top wow animated" data-wow-duration="1.2s" data-wow-delay="0.7s">
+            <a href="#" class="th-btn">CHART<i class="fa-solid fa-arrow-right ms-2"></i></a>
+            <a href="#" class="th-btn">GAMES <i class="fa-solid fa-arrow-right ms-2"></i></a>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+  <div class="swiper th-slider hero-cta-slider1" id="heroSlider1" data-slider-options='{"effect":"fade"}'>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="hero-cta-inner">
+          <div class="container th-container2 c-iframe">
+            <div class="hero-shape-area">
+              <div class="hero-bg-shape">
+                <div class="hero-bg-border-anime" data-mask-src="assets/img/hero/hero-bg-shape.png"></div>
+                <svg viewBox="0 0 1600 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                </svg>
+                <div class="verses-thumb d-xl-none d-block mobview">
+                  <img src="assets/img/tournament/game-vs1.svg" alt="tournament image" />
+                </div>
+
+                
+
+                <div class="hero-img1 z-index-common robot" data-ani="slideinleft" data-ani-delay="0.8s">
+                  <iframe src='https://my.spline.design/untitled-4a4bc67353ec95ed8e817b214d3aa6fa/' frameborder='0' width='' height='650px'></iframe>
+                </div>
+
+                
+
+<!-- 
+                <div class="hero-img2 z-index-common" data-ani="slideinright" data-ani-delay="0.8s"
+                  style="width: 350px;">
+                  <iframe src='https://my.spline.design/untitled-431210473e3f1689b21376375d6937be/' frameborder='0'
+                    height='650px'></iframe>
+                </div> -->
+
+                <div class="hero-img2 z-index-common" data-ani="slideinright" data-ani-delay="0.8s"
+                  style="width: 350px;">
+                  <iframe src='https://my.spline.design/untitled-b116c60fe8f21e0de121f55e8836aa8f/'  frameborder='0' width='' height='650px'></iframe>
+                </div>
+
+
+              </div>
+
+              <div class="title-area mb-0">
+                <p class="mt-30 mb-30 custom-anim-top wow animated" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                  Our platform seamlessly integrates with Unreal Engine, providing users with a powerful and flexible
+                  game development environment.
+                </p>
+                <p class="mt-30 mb-30 custom-anim-top wow animated" data-wow-duration="1.3s" data-wow-delay="0.2s">
+
+                  Choose from a variety of game types such as racing, arcade, and more, and unleash your creativity to
+                  bring your game ideas to life. But that's not all - when you play games created on Beek on your PC,
+                  your game acts as a Beek chain faucet, mining Beek tokens using your GPU.
+                </p>
+                <p class="mt-30 mb-30 custom-anim-top wow animated" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                  Complete missions to earn Beek rewards, but be mindful as you may lose Beek tokens that are burned
+                  from your wallet.
+                </p>
+
+                <p class="mt-30 mb-30 custom-anim-top wow animated" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                  Beek games are not just standalone experiences - they are all interconnected with the metaverse,
+                  creating a dynamic and immersive gaming ecosystem. Join us on Beek and revolutionize the way you
+                  create and play games. Let your imagination run wild with Beek!
+                </p>
+
+                <div class="btn-group custom-anim-top wow animated" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                  <a href="#" class="th-btn "><span class="btn-border">JOIN NOW
+                      <i class="fa-solid fa-arrow-right ms-1"></i></span></a>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider-pagination"></div>
+  </div>
+  <div class="marquee-area-1 bg-repeat overflow-hidden" data-bg-src="assets/img/bg/jiji-bg.png">
+    <div class="container-fluid">
+      <div class="swiper th-slider" id="marqueeSlider1"
+        data-slider-options='{"breakpoints":{"0":{"slidesPerView":"auto"}},"autoplay":{"delay":1500,"disableOnInteraction":false},"spaceBetween":50}'>
+        <div class="swiper-wrapper">
+          <div class="marquee-item swiper-slide">
+            <div class="marquee_icon">
+              <img src="assets/img/normal/star.png" alt="Icon" />
+            </div>
+            <h3 class="marquee-title">
+              <a href="#">THRILLING - INTENSE</a>
+            </h3>
+          </div>
+          <div class="marquee-item swiper-slide">
+            <div class="marquee_icon">
+              <img src="assets/img/normal/star.png" alt="Icon" />
+            </div>
+            <h3 class="marquee-title">
+              <a href="#">CEREBRAL - PUZZLING</a>
+            </h3>
+          </div>
+          <div class="marquee-item swiper-slide">
+            <div class="marquee_icon">
+              <img src="assets/img/normal/star.png" alt="Icon" />
+            </div>
+            <h3 class="marquee-title">
+              <a href="#">ASSEMBLAGE OF GAMES</a>
+            </h3>
+          </div>
+          <div class="marquee-item swiper-slide">
+            <div class="marquee_icon">
+              <img src="assets/img/normal/star.png" alt="Icon" />
+            </div>
+            <h3 class="marquee-title">
+              <a href="#">GAMEPLAY ENCOMPASSING</a>
+            </h3>
+          </div>
+          <div class="marquee-item swiper-slide">
+            <div class="marquee_icon">
+              <img src="assets/img/normal/star.png" alt="Icon" />
+            </div>
+            <h3 class="marquee-title">
+              <a href="#">GAMING SPANING</a>
+            </h3>
+          </div>
+          <div class="marquee-item swiper-slide">
+            <div class="marquee_icon">
+              <img src="assets/img/normal/star.png" alt="Icon" />
+            </div>
+            <h3 class="marquee-title">
+              <a href="#">ACTION - PACKED</a>
+            </h3>
+          </div>
+          <div class="marquee-item swiper-slide">
+            <div class="marquee_icon">
+              <img src="assets/img/normal/star.png" alt="Icon" />
+            </div>
+            <h3 class="marquee-title">
+              <a href="#">MIND - BENDING</a>
+            </h3>
+          </div>
+          <div class="marquee-item swiper-slide">
+            <div class="marquee_icon">
+              <img src="assets/img/normal/star.png" alt="Icon" />
+            </div>
+            <h3 class="marquee-title">
+              <a href="#">THRILLING - INTENSE</a>
+            </h3>
+          </div>
+          <div class="marquee-item swiper-slide">
+            <div class="marquee_icon">
+              <img src="assets/img/normal/star.png" alt="Icon" />
+            </div>
+            <h3 class="marquee-title">
+              <a href="#">CEREBRAL - PUZZLING</a>
+            </h3>
+          </div>
+          <div class="marquee-item swiper-slide">
+            <div class="marquee_icon">
+              <img src="assets/img/normal/star.png" alt="Icon" />
+            </div>
+            <h3 class="marquee-title">
+              <a href="#">ASSEMBLAGE OF GAMES</a>
+            </h3>
+          </div>
+          <div class="marquee-item swiper-slide">
+            <div class="marquee_icon">
+              <img src="assets/img/normal/star.png" alt="Icon" />
+            </div>
+            <h3 class="marquee-title">
+              <a href="#">GAMEPLAY ENCOMPASSING</a>
+            </h3>
+          </div>
+          <div class="marquee-item swiper-slide">
+            <div class="marquee_icon">
+              <img src="assets/img/normal/star.png" alt="Icon" />
+            </div>
+            <h3 class="marquee-title">
+              <a href="#">GAMING SPANING</a>
+            </h3>
+          </div>
+          <div class="marquee-item swiper-slide">
+            <div class="marquee_icon">
+              <img src="assets/img/normal/star.png" alt="Icon" />
+            </div>
+            <h3 class="marquee-title">
+              <a href="#">ACTION - PACKED</a>
+            </h3>
+          </div>
+          <div class="marquee-item swiper-slide">
+            <div class="marquee_icon">
+              <img src="assets/img/normal/star.png" alt="Icon" />
+            </div>
+            <h3 class="marquee-title">
+              <a href="#">COLLECTION OG GAMES</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <section id="about">
+    <div class="overflow-hidden space" id="about-sec">
+      <div class="about-bg-img shape-mockup" data-top="0" data-left="0">
+        <!-- <img src="assets/img/bg/about-bg1.png" alt="img" /> -->
+      </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xl-6 mb-50 mb-xl-0">
+
+            <!-- <div class="img-box1">
+              <div class="img1 custom-anim-left wow animated" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                <iframe src='https://my.spline.design/untitled-55289857df658d5a4abf4e6fac416799/' frameborder='0'
+                  width='100px' height='650px'></iframe>
+              </div>
+            </div> -->
+
+            <div class="img-box1">
+              <div class="img1 custom-anim-left wow animated" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                <iframe src='https://my.spline.design/untitled-00422eaf1ef979cef55c2bbcb8b189a6/'  frameborder='0' width='' height='650px'></iframe>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="col-xl-6">
+            <div class="about-wrap1">
+              <div class="about-title-wrap mb-n1">
+                <div class="about-title-thumb custom-anim-top wow animated" data-wow-duration="1.5s"
+                  data-wow-delay="0.1s">
+                  <!-- <img src="assets/img/normal/about1-2.png" alt="img" /> -->
+                </div>
+                <div class="title-area custom-anim-left wow animated" data-wow-duration="1.5s" data-wow-delay="0.1s">
+                  <span class="sub-title"># Revolutionizing Game Creation</span>
+                  <h2 class="sec-title mb-0">
+                    About Us
+                  </h2>
+                </div>
+              </div>
+              <div class="about-grid">
+                <div class="icon custom-anim-top wow animated" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                  <!-- <img src="assets/img/icon/about_feature_1.svg" alt="img" /> -->
+                </div>
+                <div class="about-grid-details custom-anim-left wow animated" data-wow-duration="1.5s"
+                  data-wow-delay="0.2s">
+                  <h3 class="about-grid_title h5">
+                    A Revolutionary Gaming Experience
+                  </h3>
+                  <p class="about-grid_text">
+                    At Beek, we're pioneering a groundbreaking approach to gaming, blending the thrill of play with the
+                    innovative world of cryptocurrency.
+                  </p>
+                </div>
+              </div>
+              <div class="about-grid">
+                <div class="icon custom-anim-top wow animated" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                  <!-- <img src="assets/img/icon/about_feature_2.svg" alt="img" /> -->
+                </div>
+                <div class="about-grid-details custom-anim-left wow animated" data-wow-duration="1.5s"
+                  data-wow-delay="0.2s">
+                  <h3 class="about-grid_title h5">Dive into the Beek Ecosystem</h3>
+                  <p class="about-grid_text">
+                    Join us in this journey as we redefine the boundaries of gaming. Beek is more than just a platform;
+                    it's a universe where gaming meets innovation, community, and reward.
+                  </p>
+                </div>
+              </div>
+              <div class="about-grid">
+                <div class="icon custom-anim-top wow animated" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                  <!-- <img src="assets/img/icon/about_feature_3.svg" alt="img" /> -->
+                </div>
+                <div class="about-grid-details custom-anim-left wow animated" data-wow-duration="1.5s"
+                  data-wow-delay="0.2s">
+                  <h3 class="about-grid_title h5">Mine as You Play with the Beek Faucet</h3>
+                  <p class="about-grid_text">
+                    Our Beek faucet is a distinctive feature that transforms your gaming time into an opportunity to
+                    mine Beek tokens.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+  <section id="#">
+    <div class="overflow-hidden space" id="about-sec">
+      <div class="container">
+        <div class="row ">
+          <div class="col-12 col-xl-6 ">
+            <div class="about-wrap1">
+              <div class="about-title-wrap mb-n1">
+                <div class="about-title-thumb custom-anim-top wow animated" data-wow-duration="1.5s"
+                  data-wow-delay="0.1s">
+                  <!-- <img src="assets/img/normal/about1-2.png" alt="img" /> -->
+                </div>
+
+              </div>
+              <div class="about-grid">
+                <div class="icon custom-anim-top wow animated" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                  <!-- <img src="assets/img/icon/about_feature_1.svg" alt="img" /> -->
+                </div>
+                <div class="about-grid-details custom-anim-left wow animated" data-wow-duration="1.5s"
+                  data-wow-delay="0.2s">
+                  <h3 class="about-grid_title h5">
+                    The Beek faucet is a unique feature that allows users to mine Beek tokens using their PC's GPU while
+                    playing games created on the Beek platform. Here's how it works
+                  </h3>
+                  <p class="about-grid_text d-flex align-items-start">
+                    <i class="fa-solid fa-angles-right" style="color: #C3073F; margin-right: 16px;"></i>
+                    When you play a game created on Beek on your PC, your GPU is utilized to mine Beek tokens in the
+                    background.
+                  </p>
+                </div>
+              </div>
+
+
+              <div class="about-grid">
+                <div class="icon custom-anim-top wow animated" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                  <!-- <img src="assets/img/icon/about_feature_2.svg" alt="img" /> -->
+                </div>
+                <div class="about-grid-details custom-anim-left wow animated" data-wow-duration="1.5s"
+                  data-wow-delay="0.2s">
+                  <p class="about-grid_text d-flex align-items-start">
+                    <i class="fa-solid fa-angles-right" style="color: #C3073F; margin-right: 16px;"></i>
+                    As you progress through the game and complete missions, you earn Beek rewards that are added to your
+                    Beek wallet.
+                  </p>
+                </div>
+              </div>
+              <div class="about-grid">
+                <div class="icon custom-anim-top wow animated" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                  <!-- <img src="assets/img/icon/about_feature_3.svg" alt="img" /> -->
+                </div>
+                <div class="about-grid-details custom-anim-left wow animated" data-wow-duration="1.5s"
+                  data-wow-delay="0.2s">
+
+                  <p class="about-grid_text d-flex align-items-start">
+                    <i class="fa-solid fa-angles-right" style="color: #C3073F; margin-right: 16px;"></i>
+                    However, it's important to note that there is a risk involved as you may also lose Beek tokens that
+                    are burned from your wallet while playing the game.
+                  </p>
+                </div>
+              </div>
+
+              <div class="about-grid">
+                <div class="icon custom-anim-top wow animated" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                  <!-- <img src="assets/img/icon/about_feature_3.svg" alt="img" /> -->
+                </div>
+                <div class="about-grid-details custom-anim-left wow animated" data-wow-duration="1.5s"
+                  data-wow-delay="0.2s">
+
+                  <p class="about-grid_text d-flex align-items-start">
+                    <i class="fa-solid fa-angles-right" style="color: #C3073F; margin-right: 16px;"></i>
+                    The Beek faucet incentivizes players to engage with and enjoy the games on the platform while also
+                    contributing to the mining and circulation of Beek tokens.
+                  </p>
+                </div>
+              </div>
+
+
+              <div class="about-grid">
+                <div class="icon custom-anim-top wow animated" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                  <!-- <img src="assets/img/icon/about_feature_3.svg" alt="img" /> -->
+                </div>
+                <div class="about-grid-details custom-anim-left wow animated" data-wow-duration="1.5s"
+                  data-wow-delay="0.2s">
+
+                  <p class="about-grid_text d-flex align-items-start">
+                    <i class="fa-solid fa-angles-right" style="color: #C3073F; margin-right: 16px;"></i>
+                    By integrating this unique feature, Beek aims to create an interactive and rewarding gaming
+                    experience for users, where playing games not only entertains but also allows players to earn and
+                    utilize Beek tokens within the ecosystem.
+                  </p>
+                </div>
+              </div>
+
+
+
+
+            </div>
+
+          </div>
+          <div class="col-12 col-xl-6">
+            <div class="about-wrap1">
+              <div class="about-title-wrap mb-n1">
+                <div class="about-title-thumb custom-anim-top wow animated" data-wow-duration="1.5s"
+                  data-wow-delay="0.1s">
+                  <!-- <img src="assets/img/normal/about1-2.png" alt="img" /> -->
+                </div>
+
+              </div>
+
+
+              <div class="about-grid">
+                <div class="icon custom-anim-top wow animated" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                  <!-- <img src="assets/img/icon/about_feature_1.svg" alt="img" /> -->
+                </div>
+                <div class="about-grid-details custom-anim-left wow animated" data-wow-duration="1.5s"
+                  data-wow-delay="0.2s">
+                  <h3 class="about-grid_title h5">
+                    Overall, the Beek faucet adds an exciting element to gameplay by incorporating cryptocurrency mining
+                    into the gaming experience, offering users a new way to engage with and benefit from the Beek
+                    platform.
+                  </h3>
+                  <p class="about-grid_text d-flex align-items-start">
+                    <i class="fa-solid fa-angles-right" style="color: #C3073F; margin-right: 16px;"></i>
+                    Input Keywords: Users provide key words or descriptions of the type of game they want to create.
+                    This could include the genre, setting, characters, and other elements they envision for their game.
+                  </p>
+                </div>
+              </div>
+
+              <div class="about-grid">
+                <div class="icon custom-anim-top wow animated" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                  <!-- <img src="assets/img/icon/about_feature_3.svg" alt="img" /> -->
+                </div>
+                <div class="about-grid-details custom-anim-left wow animated" data-wow-duration="1.5s"
+                  data-wow-delay="0.2s">
+
+                  <p class="about-grid_text d-flex align-items-start">
+                    <i class="fa-solid fa-angles-right" style="color: #C3073F; margin-right: 16px;"></i>
+                    AI-Driven Game Generation: The AI algorithms within the Beek platform analyze the keywords provided
+                    by the user and use this information to automatically generate game assets such as characters,
+                    environments, and other elements using Unreal Engine or similar game development tools.
+                  </p>
+                </div>
+              </div>
+
+              <div class="about-grid">
+                <div class="icon custom-anim-top wow animated" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                  <!-- <img src="assets/img/icon/about_feature_3.svg" alt="img" /> -->
+                </div>
+                <div class="about-grid-details custom-anim-left wow animated" data-wow-duration="1.5s"
+                  data-wow-delay="0.2s">
+
+                  <p class="about-grid_text d-flex align-items-start">
+                    <i class="fa-solid fa-angles-right" style="color: #C3073F; margin-right: 16px;"></i>
+                    Customization Tools: Once the initial game assets are generated, users can then customize and
+                    fine-tune these elements using the tools provided in the Beek game creation interface. This allows
+                    users to add personal touches, adjust details, and make the game uniquely their own.
+                  </p>
+                </div>
+              </div>
+
+              <div class="about-grid">
+                <div class="icon custom-anim-top wow animated" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                  <!-- <img src="assets/img/icon/about_feature_3.svg" alt="img" /> -->
+                </div>
+                <div class="about-grid-details custom-anim-left wow animated" data-wow-duration="1.5s"
+                  data-wow-delay="0.2s">
+
+                  <p class="about-grid_text d-flex align-items-start">
+                    <i class="fa-solid fa-angles-right" style="color: #C3073F; margin-right: 16px;"></i>
+                    Testing and Iteration: Users can test the game as they customize it, making adjustments and
+                    refinements as needed to ensure that the gameplay experience meets their expectations.
+                  </p>
+                </div>
+              </div>
+
+              <div class="about-grid">
+                <div class="icon custom-anim-top wow animated" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                  <!-- <img src="assets/img/icon/about_feature_3.svg" alt="img" /> -->
+                </div>
+                <div class="about-grid-details custom-anim-left wow animated" data-wow-duration="1.5s"
+                  data-wow-delay="0.2s">
+
+                  <p class="about-grid_text d-flex align-items-start">
+                    <i class="fa-solid fa-angles-right" style="color: #C3073F; margin-right: 16px;"></i>
+                    Publishing and Sharing: Once the game is complete, users can publish it on the Beek platform for
+                    others to play and enjoy. The game can be shared with the community, allowing other users to
+                    experience and provide feedback on the created content.
+                  </p>
+                </div>
+              </div>
+
+              <div class="about-grid">
+                <div class="icon custom-anim-top wow animated" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                  <!-- <img src="assets/img/icon/about_feature_3.svg" alt="img" /> -->
+                </div>
+                <div class="about-grid-details custom-anim-left wow animated" data-wow-duration="1.5s"
+                  data-wow-delay="0.2s">
+
+                  <p class="about-grid_text d-flex align-items-start">
+                    <i class="fa-solid fa-angles-right" style="color: #C3073F; margin-right: 16px;"></i>
+                    AI Assistance: Throughout the process, AI algorithms may continue to assist users by providing
+                    suggestions, automating certain tasks, or offering guidance on how to improve and enhance their game
+                    creations.
+                  </p>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="overflow-hidden" id="games">
+    <div class="container th-container2">
+      <div class="game-sec-wrap1 space" data-bg-src="assets/img/bg/game-sec1-bg.png">
+        <div class="title-area text-center custom-anim-top wow animated" data-wow-duration="1.5s" data-wow-delay="0.1s">
+          <span class="sub-title"># Releases The Latest Game</span>
+          <h2 class="sec-title">
+            AI-Powered Game Development Playground<span class="text-theme">!</span>
+          </h2>
+        </div>
+        <div class="slider-area">
+          <div class="swiper th-slider game-slider-1" id="gameSlider1"
+            data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"4"}}}'>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="game-card gradient-border">
+                  <div class="game-card-img">
+                    <a href="#"><img src="assets/img/game/1-1.png" alt="game image" /></a>
+                    <!-- <div class="game-logo">
+                        <img
+                          src="assets/img/game/logo1-1.png"
+                          alt="game logo"
+                        />
+                      </div> -->
+                  </div>
+                  <div class="game-card-details">
+                    <h3 class="box-title">
+                      <a href="#">The Hunter Killer</a>
+                    </h3>
+                    <!-- <p class="game-content">
+                        Entry Fee:<span class="text-theme">$10.00</span>
+                      </p> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="game-card gradient-border">
+                  <div class="game-card-img">
+                    <a href="#"><img src="assets/img/game/1-2.png" alt="game image" /></a>
+                    <!-- <div class="game-logo">
+                        <img
+                          src="assets/img/game/logo1-2.png"
+                          alt="game logo"
+                        />
+                      </div> -->
+                  </div>
+                  <div class="game-card-details">
+                    <h3 class="box-title">
+                      <a href="#">Net Remaining</a>
+                    </h3>
+                    <!-- <p class="game-content">
+                        Entry Fee:<span class="text-theme">Free</span>
+                      </p> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="game-card gradient-border">
+                  <div class="game-card-img">
+                    <a href="#"><img src="assets/img/game/1-3.png" alt="game image" /></a>
+                    <!-- <div class="game-logo">
+                        <img
+                          src="assets/img/game/logo1-3.png"
+                          alt="game logo"
+                        />
+                      </div> -->
+                  </div>
+                  <div class="game-card-details">
+                    <h3 class="box-title">
+                      <a href="#">Duty Balck Ops</a>
+                    </h3>
+                    <!-- <p class="game-content">
+                        Entry Fee:<span class="text-theme">$10.00</span>
+                      </p> -->
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="game-card gradient-border">
+                  <div class="game-card-img">
+                    <a href="#"><img src="assets/img/game/1-4.png" alt="game image" /></a>
+                    <!-- <div class="game-logo">
+                        <img
+                          src="assets/img/game/logo1-4.png"
+                          alt="game logo"
+                        />
+                      </div> -->
+                  </div>
+                  <div class="game-card-details">
+                    <h3 class="box-title">
+                      <a href="#">League of Legends</a>
+                    </h3>
+                    <!-- <p class="game-content">
+                        Entry Fee:<span class="text-theme">$10.00</span>
+                      </p> -->
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="game-card gradient-border">
+                  <div class="game-card-img">
+                    <a href="#"><img src="assets/img/game/1-1.png" alt="game image" /></a>
+                    <!-- <div class="game-logo">
+                        <img
+                          src="assets/img/game/logo1-1.png"
+                          alt="game logo"
+                        />
+                      </div> -->
+                  </div>
+                  <div class="game-card-details">
+                    <h3 class="box-title">
+                      <a href="#">The Hunter Killer</a>
+                    </h3>
+                    <!-- <p class="game-content">
+                        Entry Fee:<span class="text-theme">$10.00</span>
+                      </p> -->
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="game-card gradient-border">
+                  <div class="game-card-img">
+                    <a href="#"><img src="assets/img/game/1-2.png" alt="game image" /></a>
+                    <!-- <div class="game-logo">
+                        <img
+                          src="assets/img/game/logo1-2.png"
+                          alt="game logo"
+                        />
+                      </div> -->
+                  </div>
+                  <div class="game-card-details">
+                    <h3 class="box-title">
+                      <a href="#">Net Remaining</a>
+                    </h3>
+                    <!-- <p class="game-content">
+                        Entry Fee:<span class="text-theme">Free</span>
+                      </p> -->
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="game-card gradient-border">
+                  <div class="game-card-img">
+                    <a href="#"><img src="assets/img/game/1-3.png" alt="game image" /></a>
+                    <!-- <div class="game-logo">
+                        <img
+                          src="assets/img/game/logo1-3.png"
+                          alt="game logo"
+                        />
+                      </div> -->
+                  </div>
+                  <div class="game-card-details">
+                    <h3 class="box-title">
+                      <a href="#">Duty Balck Ops</a>
+                    </h3>
+                    <!-- <p class="game-content">
+                        Entry Fee:<span class="text-theme">$10.00</span>
+                      </p> -->
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="game-card gradient-border">
+                  <div class="game-card-img">
+                    <a href="#"><img src="assets/img/game/1-4.png" alt="game image" /></a>
+                    <!-- <div class="game-logo">
+                        <img
+                          src="assets/img/game/logo1-4.png"
+                          alt="game logo"
+                        />
+                      </div> -->
+                  </div>
+                  <div class="game-card-details">
+                    <h3 class="box-title">
+                      <a href="#">League of Legends</a>
+                    </h3>
+                    <!-- <p class="game-content">
+                        Entry Fee:<span class="text-theme">$10.00</span>
+                      </p> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <section class="space" id="tokenomics">
+
+
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="title-area text-center custom-anim-top wow animated" data-wow-duration="1.5s"
+            data-wow-delay="0.2s">
+            <span class="sub-title"># World Best Facilities Game</span>
+            <h2 class="sec-title">
+              Tokenomics
+              <span class="text-theme">!</span>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="feature-sec-wrap1" data-bg-src="assets/video/mvideo.gif">
+
+
+        <!-- <video autoplay muted loop playsinline class="tokenomics-background-video"
+            style="width: auto; height: auto; top: 70%; transform: translate(-50%, -50); z-index: -1; border-radius: 50px; object-fit: cover;"
+          >
+            <source src="assets/video/" type="video/mp4">
+          </video> -->
+
+
+        <div class="feature-card-wrap" style="z-index: 12 !important;">
+          <div class="feature-card-border">
+            <div class="feature-card">
+              <div class="feature-card-icon custom-anim-top wow animated" data-wow-duration="1.5s"
+                data-wow-delay="0.2s">
+                <span class="feature-card-icon-mask" data-mask-src="assets/img/icon/feature_1.png"></span>
+                <img src="assets/img/icon/feature_1.png" alt="img" />
+              </div>
+              <div class="feature-card-details custom-anim-top wow animated" data-wow-duration="1.5s"
+                data-wow-delay="0.2s">
+                <h3 class="feature-card-title ">Tax</h3>
+                <p class="feature-card-text">
+                  The tax is split evenly: 5% federal and 5% state.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-card-wrap ">
+          <div class="feature-card-border">
+            <div class="feature-card">
+              <div class="feature-card-icon custom-anim-top wow animated" data-wow-duration="1.5s"
+                data-wow-delay="0.2s">
+                <span class="feature-card-icon-mask" data-mask-src="assets/img/icon/feature_2.png"></span>
+                <img src="assets/img/icon/feature_2.png" alt="img" />
+              </div>
+              <div class="feature-card-details custom-anim-top wow animated" data-wow-duration="1.5s"
+                data-wow-delay="0.2s">
+                <h3 class="feature-card-title">Revenue Share</h3>
+                <p class="feature-card-text">
+                  Elearning's contribution to total revenue share is 25 percent.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-card-wrap">
+          <div class="feature-card-border">
+            <div class="feature-card">
+              <div class="feature-card-icon custom-anim-top wow animated" data-wow-duration="1.5s"
+                data-wow-delay="0.2s">
+                <span class="feature-card-icon-mask" data-mask-src="assets/img/icon/feature_3.png"></span>
+                <img src="assets/img/icon/feature_3.png" alt="img" />
+              </div>
+              <div class="feature-card-details custom-anim-top wow animated" data-wow-duration="1.5s"
+                data-wow-delay="0.2s">
+                <h3 class="feature-card-title">Price</h3>
+                <p class="feature-card-text">
+                  Our Price are Fixed for Some Standard Services.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="overflow-hidden">
+    <div class="container th-container2">
+      <div class=" space" data-bg-src="assets/img/bg/game-sec1-bg.png">
+        <div class="title-area text-center custom-anim-top wow animated" data-wow-duration="1.5s" data-wow-delay="0.1s">
+          <span class="sub-title"># Beek Chain: Scaling Ethereum with Layer 2 Solutions</span>
+          <h2 class="sec-title">
+            Boosting Performance and Interconnectivity for Decentralized Applications<span class="text-theme">!</span>
+          </h2>
+        </div>
+
+        <div class="row px-5" style="display: flex; justify-content: center; gap: 8px; ">
+          <div
+            class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center c-border align-items-center py-3 px-3 border"
+            style="border-radius: 16px; color: #fff; text-align: center; ">
+            Scalability: Beek Chain addresses the scalability limitations of the Ethereum mainnet by processing
+            transactions off-chain, which helps reduce congestion and lower gas fees. By leveraging Beek Chain as a
+            layer 2 solution, developers can achieve higher transaction throughput and faster confirmation times
+            compared to the Ethereum mainnet.
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center align-items-center py-3 px-3 border"
+            style="border-radius: 16px; color: #fff; text-align: center;">
+            Interoperability: Beek Chain is interoperable with the Ethereum mainnet, allowing users to seamlessly
+            transfer assets and data between the two networks. This interoperability enables developers to leverage Beek
+            Chain's scalability benefits while maintaining compatibility with the broader Ethereum ecosystem.
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center c-border  align-items-center py-3 px-3 border"
+            style="border-radius: 16px; color: #fff; text-align: center;">
+            Layer 2 Functionality: As a layer 2 solution, Beek Chain operates on top of the Ethereum mainnet, utilizing
+            its security and consensus mechanisms while offering additional features and improvements. Transactions are
+            processed off-chain on Beek Chain and periodically settled on the Ethereum mainnet, enhancing performance
+            and reducing costs.
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center align-items-center py-3 px-3 border"
+            style="border-radius: 16px; color: #fff; text-align: center;">
+            Smart Contracts: Beek Chain supports smart contracts, enabling developers to deploy decentralized
+            applications (dApps) that benefit from the platform's enhanced scalability and performance. Smart contracts
+            on Beek Chain can interact with those on the Ethereum mainnet, facilitating cross-chain functionality and
+            use cases.
+          </div>
+
+
+          <div
+            class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center c-border   align-items-center py-3 px-3 border"
+            style="border-radius: 16px; color: #fff; text-align: center;">
+            Token Support: Beek Chain may have its native token or support tokens from the Ethereum mainnet through
+            bridges or other mechanisms. These tokens can be used for transactions, staking, governance, or other
+            purposes within the Beek Chain ecosystem, providing additional utility and value to users.
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center align-items-center py-3 px-3 border"
+            style="border-radius: 16px; color: #fff; text-align: center;">
+            Security and Decentralization: Despite operating as a layer 2 chain, Beek Chain maintains a high level of
+            security by periodically anchoring its state to the Ethereum mainnet. This anchoring ensures that the
+            integrity of transactions and data on Beek Chain is secured by the robust security of the Ethereum mainnet,
+            enhancing overall network security and decentralization.
+          </div>
+
+        </div>
+
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <div class="container-fluid p-0">
+    <div class="gallery-area-1 overflow-hidden text-center">
+      <div class="slider-area gallery-slider1">
+        <div class="swiper th-slider" id="gallerySlider1"
+          data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"3"}},"effect":"coverflow","coverflowEffect":{"rotate":"0","stretch":"0","depth":"150","modifier":"1"},"centeredSlides":"true"}'>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide gallery-wrap1">
+
+              <div class="th-video">
+                <div class="hero-img1 z-index-common robot" data-ani="slideinleft" data-ani-delay="0.8s">
+                  <iframe src='https://my.spline.design/untitled-5ea756fa8e2ddb388596a8abf21b57a0/' frameborder='0' width='100px' height='600px'></iframe>
+                </div>
+                <a href="assets/img/video/1-1.png" class="play-btn popup-image style3"><i
+                    class="fa-solid fa-arrow-up-right"></i></a>
+              </div>
+            </div>
+            <div class="swiper-slide gallery-wrap1">
+              <div class="th-video">
+                <iframe src='https://my.spline.design/untitled-c16491ada4b36969b65484b985b58beb/' frameborder='0' width='100px' height='600px'></iframe>
+                <a href="assets/img/video/1-2.png" class="play-btn popup-image style3"><i
+                    class="fa-solid fa-arrow-up-right"></i></a>
+              </div>
+            </div>
+            <div class="swiper-slide gallery-wrap1">
+              <div class="th-video">
+                <iframe src='https://my.spline.design/untitled-4eaf1976ec71ad85d6d4d31c6374aff2/' frameborder='0' width='100px' height='600px'></iframe>
+                <a href="assets/img/video/1-3.png" class="play-btn popup-image style3"><i
+                    class="fa-solid fa-arrow-up-right"></i></a>
+              </div>
+            </div>
+            <div class="swiper-slide gallery-wrap1">
+              <div class="th-video">
+                <iframe src='https://my.spline.design/untitled-e85f5003f0de18d55f50c1b50113cab4/' frameborder='0' width='100px' height='600px'></iframe>
+                <a href="assets/img/video/1-1.png" class="play-btn popup-image style3"><i
+                    class="fa-solid fa-arrow-up-right"></i></a>
+              </div>
+            </div>
+            <div class="swiper-slide gallery-wrap1">
+              <div class="th-video">
+                <iframe src='https://my.spline.design/untitled-2d592839d8f6bf7501a9f8c9cf0ac632/' frameborder='0' width='100px' height='650px'></iframe>
+                <a href="assets/img/video/1-2.png" class="play-btn popup-image style3"><i
+                    class="fa-solid fa-arrow-up-right"></i></a>
+              </div>
+            </div>
+
+
+            <div class="swiper-slide gallery-wrap1">
+              <div class="th-video">
+                <iframe src='https://my.spline.design/untitled-da026d65abb9f1956932507d42023fc3/' frameborder='0' width='100px' height='600px'></iframe>
+                <a href="assets/img/video/1-3.png" class="play-btn popup-image style3"><i
+                    class="fa-solid fa-arrow-up-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button data-slider-prev="#gallerySlider1" class="slider-arrow slider-prev">
+          <i class="fas fa-angle-left"></i>
+        </button>
+        <button data-slider-next="#gallerySlider1" class="slider-arrow slider-next">
+          <i class="fas fa-angle-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <section class="team-sec-1 space" id="teams">
+    <div class="team-shape1-1 shape-mockup" data-top="0" data-right="0">
+      <!-- <img src="assets/img/bg/team-sec1-bg.png" alt="img" /> -->
+    </div>
+    <div class="container th-container3">
+      <div class="row justify-content-center">
+        <div class="col-xl-6 col-lg-7 col-md-8">
+          <div class="title-area text-center custom-anim-top wow animated" data-wow-duration="1.5s"
+            data-wow-delay="0.2s">
+            <span class="sub-title"># Top World Class Gamer</span>
+            <h2 class="sec-title">Let’s See Our Pro Players</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-area team-slider1">
+        <div class="swiper th-slider has-shadow" id="teamSlider1"
+          data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"4"},"1200":{"slidesPerView":"5"}}}'>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="th-team team-card">
+                <div class="team-card-corner team-card-corner1"></div>
+                <div class="team-card-corner team-card-corner2"></div>
+                <div class="team-card-corner team-card-corner3"></div>
+                <div class="team-card-corner team-card-corner4"></div>
+                <div class="img-wrap">
+                  <div class="team-img">
+                    <img src="assets/img/team/1-1.png" alt="Team" />
+                  </div>
+
+                </div>
+                <div class="team-card-content">
+                  <h3 class="box-title">
+                    <a href="#">Faker</a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="th-team team-card">
+                <div class="team-card-corner team-card-corner1"></div>
+                <div class="team-card-corner team-card-corner2"></div>
+                <div class="team-card-corner team-card-corner3"></div>
+                <div class="team-card-corner team-card-corner4"></div>
+                <div class="img-wrap">
+                  <div class="team-img">
+                    <img src="assets/img/team/1-2.png" alt="Team" />
+                  </div>
+
+                </div>
+                <div class="team-card-content">
+                  <h3 class="box-title">
+                    <a href="#">Ninja</a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="th-team team-card">
+                <div class="team-card-corner team-card-corner1"></div>
+                <div class="team-card-corner team-card-corner2"></div>
+                <div class="team-card-corner team-card-corner3"></div>
+                <div class="team-card-corner team-card-corner4"></div>
+                <div class="img-wrap">
+                  <div class="team-img">
+                    <img src="assets/img/team/1-3.png" alt="Team" />
+                  </div>
+
+                </div>
+                <div class="team-card-content">
+                  <h3 class="box-title">
+                    <a href="#">Flash</a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="th-team team-card">
+                <div class="team-card-corner team-card-corner1"></div>
+                <div class="team-card-corner team-card-corner2"></div>
+                <div class="team-card-corner team-card-corner3"></div>
+                <div class="team-card-corner team-card-corner4"></div>
+                <div class="img-wrap">
+                  <div class="team-img">
+                    <img src="assets/img/team/1-4.png" alt="Team" />
+                  </div>
+
+                </div>
+                <div class="team-card-content">
+                  <h3 class="box-title">
+                    <a href="#">Tokido</a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="th-team team-card">
+                <div class="team-card-corner team-card-corner1"></div>
+                <div class="team-card-corner team-card-corner2"></div>
+                <div class="team-card-corner team-card-corner3"></div>
+                <div class="team-card-corner team-card-corner4"></div>
+                <div class="img-wrap">
+                  <div class="team-img">
+                    <img src="assets/img/team/1-5.png" alt="Team" />
+                  </div>
+
+                </div>
+                <div class="team-card-content">
+                  <h3 class="box-title">
+                    <a href="#">Umehara</a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="th-team team-card">
+                <div class="team-card-corner team-card-corner1"></div>
+                <div class="team-card-corner team-card-corner2"></div>
+                <div class="team-card-corner team-card-corner3"></div>
+                <div class="team-card-corner team-card-corner4"></div>
+                <div class="img-wrap">
+                  <div class="team-img">
+                    <img src="assets/img/team/1-1.png" alt="Team" />
+                  </div>
+
+                </div>
+                <div class="team-card-content">
+                  <h3 class="box-title">
+                    <a href="#">Daigo Umehara</a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="th-team team-card">
+                <div class="team-card-corner team-card-corner1"></div>
+                <div class="team-card-corner team-card-corner2"></div>
+                <div class="team-card-corner team-card-corner3"></div>
+                <div class="team-card-corner team-card-corner4"></div>
+                <div class="img-wrap">
+                  <div class="team-img">
+                    <img src="assets/img/team/1-2.png" alt="Team" />
+                  </div>
+                </div>
+                <div class="team-card-content">
+                  <h3 class="box-title">
+                    <a href="#">Armada</a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="th-team team-card">
+                <div class="team-card-corner team-card-corner1"></div>
+                <div class="team-card-corner team-card-corner2"></div>
+                <div class="team-card-corner team-card-corner3"></div>
+                <div class="team-card-corner team-card-corner4"></div>
+                <div class="img-wrap">
+                  <div class="team-img">
+                    <img src="assets/img/team/1-3.png" alt="Team" />
+                  </div>
+                </div>
+                <div class="team-card-content">
+                  <h3 class="box-title">
+                    <a href="#">ZywOo </a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="th-team team-card">
+                <div class="team-card-corner team-card-corner1"></div>
+                <div class="team-card-corner team-card-corner2"></div>
+                <div class="team-card-corner team-card-corner3"></div>
+                <div class="team-card-corner team-card-corner4"></div>
+                <div class="img-wrap">
+                  <div class="team-img">
+                    <img src="assets/img/team/1-4.png" alt="Team" />
+                  </div>
+                </div>
+                <div class="team-card-content">
+                  <h3 class="box-title">
+                    <a href="#">N0tail</a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="th-team team-card">
+                <div class="team-card-corner team-card-corner1"></div>
+                <div class="team-card-corner team-card-corner2"></div>
+                <div class="team-card-corner team-card-corner3"></div>
+                <div class="team-card-corner team-card-corner4"></div>
+                <div class="img-wrap">
+                  <div class="team-img">
+                    <img src="assets/img/team/1-5.png" alt="Team" />
+                  </div>
+                </div>
+                <div class="team-card-content">
+                  <h3 class="box-title">
+                    <a href="#">Bugha </a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button data-slider-prev="#teamSlider1" class="slider-arrow slider-prev">
+          <i class="far fa-arrow-left"></i>
+        </button>
+        <button data-slider-next="#teamSlider1" class="slider-arrow slider-next">
+          <i class="far fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+  <div class="container th-container4">
+    <div class="cta-area-1">
+      <div class="cta-bg-shape-border">
+        <svg width="1464" height="564" viewBox="0 0 1464 564" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M1463.5 30V534C1463.5 550.292 1450.29 563.5 1434 563.5H1098H927.426C919.603 563.5 912.099 560.392 906.567 554.86L884.14 532.433C878.42 526.713 870.663 523.5 862.574 523.5H601.426C593.337 523.5 585.58 526.713 579.86 532.433L557.433 554.86C551.901 560.392 544.397 563.5 536.574 563.5H366H30C13.7076 563.5 0.5 550.292 0.5 534V30C0.5 13.7076 13.7076 0.5 30 0.5H366H536.574C544.397 0.5 551.901 3.60802 557.433 9.14034L579.86 31.5668C585.58 37.2866 593.337 40.5 601.426 40.5H862.574C870.663 40.5 878.42 37.2866 884.14 31.5668L906.567 9.14035C912.099 3.60803 919.603 0.5 927.426 0.5H1098H1434C1450.29 0.5 1463.5 13.7076 1463.5 30Z"
+            stroke="url(#paint0_linear_202_547)" />
+          <defs>
+            <linearGradient id="paint0_linear_202_547" x1="0" y1="0" x2="1505.47" y2="412.762"
+              gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="var(--theme-color)" />
+              <stop offset="1" stop-color="var(--theme-color2)" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="cta-wrap-bg bg-repeat" data-bg-src="assets/img/bg/jiji-bg.png"
+        data-mask-src="assets/img/shape/cta-bg-shape1.svg">
+        <div class="cta-bg-img">
+          <img src="assets/img/bg/cta-sec1-bg.png" alt="img" style="opacity: 0.7;" />
+        </div>
+        <div class="cta-thumb">
+          <img src="assets/img/normal/cta1-1.png" alt="img" />
+        </div>
+      </div>
+      <div class="cta-wrap">
+        <div class="row">
+          <div class="col-xl-5">
+            <div class="title-area mb-0 p-5 custom-anim-left wow animated" data-wow-duration="1.5s"
+              data-wow-delay="0.2s">
+              <span class="sub-title"># World Best Gaming Site</span>
+              <h2 class="sec-title">
+                Join Beek to Become Next
+                <span class="text-theme fw-medium">PRO Gamer Today !</span>
+              </h2>
+              <p class="mt-30 mb-30">
+                Integrate your gaming website with Beek Chain to unlock fast, cost-efficient transactions and seamless
+                asset transfers, enhancing the gaming experience on the Ethereum platform
+              </p>
+              <!-- <a href="#" class="th-btn"
+                  >JOIN COMMUNITY <i class="fa-solid fa-arrow-right ms-2"></i
+                ></a> -->
+              <div class="btn-group custom-anim-top wow animated" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                <a href="#" class="th-btn "><span class="btn-border">JOIN COMMUNITY
+                    <i class="fa-solid fa-arrow-right ms-1"></i></span></a>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="client-area-1 overflow-hidden space">
+    <div class="container-fluid p-0">
+      <div class="swiper th-slider client-slider1"
+        data-slider-options='{"breakpoints":{"0":{"slidesPerView":2},"400":{"slidesPerView":"2"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"4"},"1200":{"slidesPerView":"7"},"1300":{"slidesPerView":"9"}}, "spaceBetween": "0", "loop": "true"}'>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#" class="client-card"><img src="assets/img/client/1-1.png" alt="Image" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="client-card"><img src="assets/img/client/1-2.png" alt="Image" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="client-card"><img src="assets/img/client/1-3.png" alt="Image" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="client-card"><img src="assets/img/client/1-4.png" alt="Image" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="client-card"><img src="assets/img/client/1-5.png" alt="Image" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="client-card"><img src="assets/img/client/1-6.png" alt="Image" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="client-card"><img src="assets/img/client/1-7.png" alt="Image" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="client-card"><img src="assets/img/client/1-8.png" alt="Image" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="client-card"><img src="assets/img/client/1-9.png" alt="Image" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="client-card"><img src="assets/img/client/1-1.png" alt="Image" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="client-card"><img src="assets/img/client/1-2.png" alt="Image" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="client-card"><img src="assets/img/client/1-3.png" alt="Image" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="client-card"><img src="assets/img/client/1-4.png" alt="Image" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="client-card"><img src="assets/img/client/1-5.png" alt="Image" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="client-card"><img src="assets/img/client/1-6.png" alt="Image" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="client-card"><img src="assets/img/client/1-7.png" alt="Image" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="client-card"><img src="assets/img/client/1-8.png" alt="Image" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="client-card"><img src="assets/img/client/1-9.png" alt="Image" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-wrapper footer-layout2">
+    <!-- data-bg-src="assets/img/bg/footer2-bg.png" -->
+    <!-- <div class="container">
+        <div class="text-center">
+          <div
+            class="footer-top-shape bg-repeat"
+            data-bg-src="assets/img/bg/jiji-bg.png"
+          >
+         
+        </div>
+        </div>
+      </div> -->
+
+    <!-- <div class="widget-area">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-md-6 col-xl-auto">
+              <div class="widget footer-widget">
+                <div class="th-widget-about">
+                  <div class="about-logo">
+                    <a href="index.html"
+                      ><span
+                        data-mask-src="assets/img/logo.svg"
+                        class="logo-mask"
+                      ></span>
+                      <img src="assets/img/logo.svg" alt="Beek"
+                    /></a>
+                  </div>
+                  <p class="about-text">
+                    Beyond EGames tournaments, include a broader calendar of
+                    gaming events, conferences, and conventions.
+                  </p>
+                  <h3 class="widget_title">
+                    Follow <span class="text-theme">With Us:</span>
+                  </h3>
+                  <div class="th-widget-contact">
+                    <div class="th-social style-mask">
+                      <a class="facebook" href="#"
+                        ><i class="fab fa-facebook-f"></i
+                      ></a>
+                      <a class="twitter" href="#"
+                        ><img
+                          src="assets/img/icon/x-twitter-icon.svg"
+                          alt="icon" /></a
+                      ><a class="instagram" href="#"
+                        ><img
+                          src="assets/img/icon/instagram-icon.svg"
+                          alt="icon"
+                        /> 
+                      </a>
+                      <a class="google-play" href="#"
+                        ><img
+                          src="assets/img/icon/google-playstore-icon.svg"
+                          alt="icon"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-auto">
+              <div class="widget widget_nav_menu footer-widget">
+                <h3 class="widget_title">Useful Link</h3>
+                <div class="menu-all-pages-container">
+                  <ul class="menu">
+                    <li>
+                      <a href="blog.html"
+                        ><i class="far fa-angle-right"></i>Gaming</a
+                      >
+                    </li>
+                    <li>
+                      <a href="blog.html"
+                        ><i class="far fa-angle-right"></i>Products</a
+                      >
+                    </li>
+                    <li>
+                      <a href="blog.html"
+                        ><i class="far fa-angle-right"></i>Social Network</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-auto">
+              <div class="widget widget_nav_menu footer-widget">
+                <h3 class="widget_title">Supports</h3>
+                <div class="menu-all-pages-container">
+                  <ul class="menu">
+                    <li>
+                      <a href="contact.html"
+                        ><i class="far fa-angle-right"></i> Help & Support</a
+                      >
+                    </li>
+                    <li>
+                      <a href="contact.html"
+                        ><i class="far fa-angle-right"></i> Live Auctions</a
+                      >
+                    </li>
+                    <li>
+                      <a href="contact.html"
+                        ><i class="far fa-angle-right"></i> Our News</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-auto">
+              <div class="widget newsletter-widget footer-widget">
+                <h3 class="widget_title">Newsletter</h3>
+                <p class="footer-text">
+                  Subscribe to our newsletter to get our latest update & news
+                  consenter
+                </p>
+                <form class="newsletter-form">
+                  <div class="form-group">
+                    <input
+                      class="form-control"
+                      type="email"
+                      placeholder="Email Address"
+                      required=""
+                    />
+                    <button type="submit" class="th-btn">
+                      <i class="fas fa-paper-plane"></i>
+                    </button>
+                  </div>
+                  <div class="btn-wrap">
+                    <a href="#"
+                      ><img
+                        src="assets/img/normal/footer-apple-btn.png"
+                        alt="img" /></a
+                    ><a href="#"
+                      ><img
+                        src="assets/img/normal/footer-playstore-btn.png"
+                        alt="img"
+                    /></a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+    <div class="copyright-wrap text-center bg-repeat" data-bg-src="assets/img/bg/jiji-bg.png">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-6 mt-30">
+            <p class="copyright-text bg-repeat">
+              <!-- data-bg-src="assets/img/bg/jiji-bg.png" -->
+
+              <i class="fal fa-copyright"></i> Copyright 2024
+              <a href="index.html">Beek.</a> All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="scroll-top">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="
+            transition: stroke-dashoffset 10ms linear 0s;
+            stroke-dasharray: 307.919, 307.919;
+            stroke-dashoffset: 307.919;
+          "></path>
+    </svg>
+  </div>
+  <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/app.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+
+
+
+</body>
+
+</html>
