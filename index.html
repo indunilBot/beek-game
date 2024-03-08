@@ -51,6 +51,11 @@
       display: none;
     }
   }
+  @media (min-width: 640px) {
+    .robot1 {
+      display: none;
+    }
+  }
 
   .hero-background-video,
   .hero-background-mvideo {
@@ -218,10 +223,10 @@
       Your browser does not support the video tag.
     </video>
 
-    <!-- <video autoplay muted loop playsinline class="hero-background-mvideo">
+    <video autoplay muted loop playsinline class="hero-background-mvideo">
           <source src="assets/video/mvideo.mp4" type="video/mp4">
           Your browser does not support the video tag.
-        </video>  -->
+        </video> 
 
 
 
@@ -270,19 +275,16 @@
                   <iframe src='https://my.spline.design/untitled-4a4bc67353ec95ed8e817b214d3aa6fa/' frameborder='0' width='' height='650px'></iframe>
                 </div>
 
-                
 
-<!-- 
-                <div class="hero-img2 z-index-common" data-ani="slideinright" data-ani-delay="0.8s"
-                  style="width: 350px;">
-                  <iframe src='https://my.spline.design/untitled-431210473e3f1689b21376375d6937be/' frameborder='0'
-                    height='650px'></iframe>
-                </div> -->
-
-                <div class="hero-img2 z-index-common" data-ani="slideinright" data-ani-delay="0.8s"
-                  style="width: 350px;">
+                <div
+                    class="hero-img2 z-index-common"
+                    data-ani="slideinright"
+                    data-ani-delay="0.8s"
+                    style="width: 350px; position: absolute; top: 0;"
+                  >
                   <iframe src='https://my.spline.design/untitled-b116c60fe8f21e0de121f55e8836aa8f/'  frameborder='0' width='' height='650px'></iframe>
-                </div>
+
+                  </div>
 
 
               </div>
@@ -470,9 +472,15 @@
               </div>
             </div> -->
 
-            <div class="img-box1">
+            <div class="img-box1 robot">
               <div class="img1 custom-anim-left wow animated" data-wow-duration="1.5s" data-wow-delay="0.2s">
                 <iframe src='https://my.spline.design/untitled-00422eaf1ef979cef55c2bbcb8b189a6/'  frameborder='0' width='' height='650px'></iframe>
+              </div>
+            </div>
+
+            <div class="img-box1 robot1">
+              <div class="img1 custom-anim-left wow animated" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                <iframe src='https://my.spline.design/untitled-e2449386a7307a31c34870448ca1a6af/' frameborder='0' width='100px' height='650px'></iframe>
               </div>
             </div>
 
